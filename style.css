@@ -56,6 +56,7 @@ html {
   align-items: center;
   justify-content: space-between;
   gap: 6px;
+  margin: 0 12px;
 }
 
 a {
@@ -478,5 +479,126 @@ footer#footer .shikakuru-globalFooter__subNavi__item a:hover {
   .top_16 {
     top: 5px;
     width: 70px;
+  }
+}
+
+.jobs {
+  padding: 40px 40px 0px 40px;
+  text-align: center;
+}
+
+.jobs-title {
+  font-size: 48px;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  color: #f5a623;
+  margin-bottom: 24px;
+}
+
+.job-group {
+  margin-bottom: 32px;
+}
+
+.job-group-title {
+  font-size: 38px;
+  color: #0D216A;
+  margin-bottom: 16px;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.job-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.job-list li {
+  border: 3px solid #0d216a91;
+  border-radius: 8px;
+  padding: 10px 6px;
+  font-size: 28px;
+  color: #000000;
+  background: #fff;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+}
+
+body {
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.llw {
+  box-shadow: 0px 0px 10px rgb(239 239 239 / 59%);
+}
+
+.sp {
+  display: none
+}
+
+.pc {
+  display: block;
+}
+
+@media screen and (max-width: 550px) {
+  .sp {
+    display: block;
+  }
+
+  .pc {
+    display: none;
+  }
+
+  .btn-frame {
+    margin: 0px;
+  }
+
+  .jobs {
+    padding: 40px 20px 0px 20px;
+    text-align: center;
+  }
+
+  .job-list li {
+    border: 3px solid #0d216a91;
+    border-radius: 8px;
+    padding: 10px 6px;
+    font-size: 20px;
+  }
+
+  .job-list li {
+    border: 3px solid #0d216a91;
+    border-radius: 8px;
+    padding: 10px 6px;
+    font-size: 20px;
+    color: #000000;
+    background: #fff;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .jobs-title {
+    font-size: 36px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+    color: #f5a623;
+    margin-bottom: 24px;
+    margin-top: 0px;
+    line-height: 1.2;
+  }
+
+  .job-group-title {
+    font-size: 28px;
   }
 }
